@@ -1,0 +1,18 @@
+$yellow: #ffe26d;
+$violet: #62497c;
+$black: #040405;
+$grey: #ececec;
+@mixin f100 {
+    font-family: 'Roboto';
+    font-weight: 100;
+}
+
+@mixin f500 {
+    font-family: 'Montserrat';
+    font-weight: 500;
+}
+
+@mixin f700 {
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
