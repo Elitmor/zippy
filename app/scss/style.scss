@@ -1,235 +1,313 @@
-    @import '__vars';
-    @import '__global';
-    @import '__fonts';
-    // header start
-    .header__slider {
-        margin-bottom: 90px;
-        &-item {
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            height: 100vh;
-        }
-    }
-    
-    .header__inner-top {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 150px;
-        padding-top: 40px;
-        position: relative;
-    }
-    
-    .header__logo {
-        @include f700;
-        font-size: 30px;
-        color: #fff;
-        text-transform: uppercase;
-    }
-    
-    .menu {
-        li {
-            display: inline-block;
-            margin-left: 10px;
-        }
-        a {
-            @include f700;
-            font-size: 10px;
-            color: #fff;
-            text-transform: uppercase;
-            transition: all .4s;
-            &:hover {
-                color: $yellow;
+        @import '__vars';
+        @import '__global';
+        @import '__fonts';
+        // header start
+        .header__slider {
+            margin-bottom: 90px;
+            &-item {
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                height: 100vh;
             }
         }
-    }
-    
-    .header__title {
-        @include f700;
-        font-size: 40px;
-        color: #fff;
-        max-width: 490px;
-        margin-bottom: 70px;
-    }
-    
-    .header__text {
-        @include f100;
-        font-size: 19px;
-        color: #fff;
-        max-width: 475px;
-        margin-bottom: 40px;
-    }
-    
-    .header__btn {
-        button {
+        
+        .header__inner-top {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 150px;
+            padding-top: 40px;
+            position: relative;
+        }
+        
+        .header__logo {
             @include f700;
-            font-size: 10px;
-            padding: 15px 25px;
-            border-radius: 3px;
-            cursor: pointer;
-            border: none;
-        }
-        &-yellow {
-            background-color: $yellow;
-            color: $black;
-        }
-        &-violet {
-            background-color: $violet;
+            font-size: 30px;
             color: #fff;
+            text-transform: uppercase;
         }
-    }
-    
-    .slick-dots {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        li {
-            margin-left: 10px;
-            margin-right: 10px;
-            &.slick-active {
-                button {
-                    background-color: #fff;
+        
+        .menu {
+            li {
+                display: inline-block;
+                margin-left: 10px;
+            }
+            a {
+                @include f700;
+                font-size: 10px;
+                color: #fff;
+                text-transform: uppercase;
+                transition: all .4s;
+                &:hover {
+                    color: $yellow;
                 }
             }
-            button {
-                background-color: #aa999e;
-                position: absolute;
-                width: 10px;
-                height: 10px;
-                border-radius: 50%;
-                font-size: 0;
-                border: none;
-                bottom: 40px;
-                cursor: pointer;
-                outline: none;
-            }
         }
-    }
-    
-    // header end
-    // description start
-    .description__inner {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-    }
-    
-    .description__text {
-        margin-top: 85px;
-        margin-bottom: 170px;
-        font-size: 30px;
-        color: $black;
-        max-width: 460px;
-    }
-    
-    .description__item-inner {
-        display: flex;
-        justify-content: space-around;
-    }
-    
-    .description__item {
-        max-width: 151px;
-    }
-    
-    .description__item-title {
-        @include f700;
-        font-size: 15px;
-        color: $violet;
-        text-transform: uppercase;
-        margin: 50px 15px;
-    }
-    
-    .description__item-btn {
-        button {
+        
+        .header__title {
             @include f700;
-            font-size: 10px;
-            padding: 15px 25px;
-            border-radius: 3px;
-            cursor: pointer;
-            border: none;
-            margin: 20px 15px;
-            transition: all .4s;
+            font-size: 40px;
+            color: #fff;
+            max-width: 490px;
+            margin-bottom: 70px;
         }
-        &:hover {
-            button {
-                background-color: $yellow;
-            }
-        }
-    }
-    
-    .item__icons {
-        position: relative;
-        img {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-    }
-    
-    .item__icons::before {
-        position: absolute;
-        content: "";
-        width: 81px;
-        height: 81px;
-        background-color: $violet;
-        border-radius: 50%;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    
-    // description end
-    // projects start 
-    .projects__title {
-        margin-bottom: 50px;
-    }
-    
-    .projects__inner {
-        display: flex;
-        background-color: #efefef;
-    }
-    
-    .projects__item {
-        min-width: 350px;
-        transition: all 0.4s;
-        &-images {
-            background-size: cover;
-            background-repeat: no-repeat;
+        
+        .header__text {
+            @include f100;
+            font-size: 19px;
+            color: #fff;
+            max-width: 475px;
             margin-bottom: 40px;
         }
-        &-title {
-            @include f700;
-            text-transform: uppercase;
-            margin: 15px 40px;
-        }
-        &:hover {
-            background-color: $yellow;
-        }
-    }
-    
-    .projects-item-text {
-        margin: 15px 40px;
-    }
-    
-    .projects__item img {
-        width: 100%;
-    }
-    
-    .projects-item-btn {
-        @include f700;
-        button {
-            padding: 15px 25px;
-            margin: 15px 40px;
-            background-color: #fff;
-            color: $black;
-            cursor: pointer;
-            transition: all 0.4s;
-            &:hover {
+        
+        .header__btn {
+            button {
+                @include f700;
+                font-size: 10px;
+                padding: 15px 25px;
+                border-radius: 3px;
+                cursor: pointer;
+                border: none;
+            }
+            &-yellow {
+                background-color: $yellow;
+                color: $black;
+            }
+            &-violet {
                 background-color: $violet;
                 color: #fff;
             }
         }
-    }
-    
-    // projects end
+        
+        .slick-dots {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            li {
+                margin-left: 10px;
+                margin-right: 10px;
+                &.slick-active {
+                    button {
+                        background-color: #fff;
+                    }
+                }
+                button {
+                    background-color: #aa999e;
+                    position: absolute;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    font-size: 0;
+                    border: none;
+                    bottom: 40px;
+                    cursor: pointer;
+                    outline: none;
+                }
+            }
+        }
+        
+        // header end
+        // description start
+        .description__inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        
+        .description__text {
+            margin-top: 85px;
+            margin-bottom: 170px;
+            font-size: 30px;
+            color: $black;
+            max-width: 460px;
+        }
+        
+        .description__item-inner {
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        .description__item {
+            max-width: 151px;
+        }
+        
+        .description__item-title {
+            @include f700;
+            font-size: 15px;
+            color: $violet;
+            text-transform: uppercase;
+            margin: 50px 15px;
+        }
+        
+        .description__item-btn {
+            button {
+                @include f700;
+                font-size: 10px;
+                padding: 15px 25px;
+                border-radius: 3px;
+                cursor: pointer;
+                border: none;
+                margin: 20px 15px;
+                transition: all .4s;
+                margin-bottom: 100px;
+            }
+            &:hover {
+                button {
+                    background-color: $yellow;
+                }
+            }
+        }
+        
+        .item__icons {
+            position: relative;
+            img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        
+        .item__icons::before {
+            position: absolute;
+            content: "";
+            width: 81px;
+            height: 81px;
+            background-color: $violet;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        // description end
+        // projects start 
+        .projects__title {
+            margin-bottom: 50px;
+            position: relative;
+        }
+        
+        .projects__title::before {
+            position: absolute;
+            content: "";
+            width: 695px;
+            height: 2px;
+            background-color: #e7e7e7;
+            top: -50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .projects__inner {
+            display: flex;
+            background-color: #efefef;
+            margin-bottom: 90px;
+        }
+        
+        .projects__item {
+            min-width: 350px;
+            transition: all 0.4s;
+            &-images {
+                background-size: cover;
+                background-repeat: no-repeat;
+                margin-bottom: 40px;
+            }
+            &-title {
+                @include f700;
+                text-transform: uppercase;
+                margin: 15px 40px;
+            }
+            &:hover {
+                background-color: $yellow;
+            }
+        }
+        
+        .projects-item-text {
+            margin: 15px 40px;
+        }
+        
+        .projects__item img {
+            width: 100%;
+        }
+        
+        .projects-item-btn {
+            @include f700;
+            button {
+                padding: 15px 25px;
+                margin: 15px 40px;
+                background-color: #fff;
+                color: $black;
+                cursor: pointer;
+                transition: all 0.4s;
+                text-transform: uppercase;
+                font-size: 10px;
+                &:hover {
+                    background-color: $violet;
+                    color: #fff;
+                }
+            }
+        }
+        
+        // projects end
+        // pricing start 
+        .pricing__title {
+            margin-bottom: 50px;
+        }
+        
+        .pricing__inner {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 90px;
+        }
+        
+        .pricing__item {
+            text-align: center;
+            border-right: 1px solid #e7e7e7;
+            &-plan {
+                @include f700;
+                font-size: 15px;
+                color: $black;
+                margin: 10px 0;
+                width: 220px;
+            }
+            &-price {
+                @include f500;
+                font-size: 15px;
+                color: #e7e7e7;
+                margin: 10px 0;
+            }
+            &-available,
+            &-contacts,
+            &-mess,
+            &-disgusting {
+                @include f100;
+                font-size: 11px;
+                margin: 5px 0;
+            }
+            &-btn {
+                @include f700;
+                font-size: 10px;
+                margin-top: 20px;
+                button {
+                    border-radius: 3px;
+                    width: 81px;
+                    height: 28px;
+                    background-color: $violet;
+                    color: #fff;
+                    text-transform: uppercase;
+                }
+            }
+        }
+        
+        .pricing__item-btn:hover {
+            button {
+                background-color: $yellow;
+                color: $black;
+            }
+        }
+        
+        .pricing__item:last-child {
+            border: none;
+        }
+        
+        // pricing end
