@@ -17,7 +17,6 @@
     justify-content: space-between;
     margin-bottom: 150px;
     padding-top: 40px;
-    position: relative;
 }
 
 .header__logo {
@@ -81,7 +80,7 @@
 
 .slick-dots {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     li {
         margin-left: 10px;
@@ -222,6 +221,7 @@
 
 .projects__item {
     min-width: 350px;
+    width: 100%;
     transition: all 0.4s;
     &-images {
         background-size: cover;
@@ -515,7 +515,7 @@
 }
 
 .blog__item {
-    width: 220px;
+    width: 33, 33%;
     &-title {
         @include f700;
         font-size: 15px;
